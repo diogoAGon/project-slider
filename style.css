@@ -1,4 +1,5 @@
 *{
+    font-family: 'Kanit', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -44,4 +45,54 @@
 /* puxando o restante, q serao os do meio  */
 .slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
     height: 665px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: rotate(270deg);
+    transition: 0.7s ease;
+}
+.details{
+    position: absolute;
+    bottom: 43px;
+    left: 43px;
+}
+.details h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7 ease;
+    display: none;
+
+}
+.details p{
+ font-size: 20px;
+ font-weight: 700;
+ text-align: left;
+ line-height: 33px;
+ text-align: left;
+ color: white;
+ text-transform: uppercase;
+ transition: 0.7 ease;
+ display: none;
+}
+.slider-img.active{
+    width: 766px !important;
+    height: 750px !important;
+}
+.slider-img.active h1{
+    display: none;
+}
+.slider-img.active .details p  .slider-img.active .details h2{
+    display: block;
 }
