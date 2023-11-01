@@ -3,7 +3,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    flex-wrap: nowrap;
+    
 }
+
 .slider-container{
     width: 100%;
     height: 100vh;
@@ -95,4 +98,20 @@ h1{
 }
 .slider-img.active .details p  .slider-img.active .details h2{
     display: block;
+}
+p{
+    color: white;
+}
+h3{
+
+    position: center    ;
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+body{
+ background: black;
 }
