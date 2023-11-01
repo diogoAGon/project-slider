@@ -5,6 +5,8 @@
     box-sizing: border-box;
     flex-wrap: nowrap;
     
+    
+    
 }
 
 .slider-container{
@@ -101,6 +103,9 @@ h1{
 }
 p{
     color: white;
+    text-align: center;
+    font-size: 16px;
+
 }
 h3{
 
@@ -112,6 +117,70 @@ h3{
     justify-content: center;
     margin-top: 10px;
 }
+
+h4{
+
+    position: center    ;
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -53px;
+    
+}
 body{
  background: black;
 }
+
+.slider-container2{
+    
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-images2{
+    display: flex;
+    align-items: center;
+    gap: 70px   ;
+}
+.slider-images2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.slider-img2{
+    width: 120px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transform: 0.7s ease;
+}
+
+/* isso vai pegar o primeiro e o ultimo slide, as pontas */
+.slider-images2 .slider-img2:first-child, .slider-images2 .slider-img2:last-child{
+    height: 480px;
+}
+/* vao puxar a img de acordo com o numero da sequencia */
+.slider-images2 .slider-img2:nth-child(2), .slider-images2 .slider-img2:nth-child(6){
+    height: 480px;
+}
+/* puxando o restante, q serao os do meio  */
+.slider-images2 .slider-img2:nth-child(3), .slider-images2 .slider-img2:nth-child(4), .slider-images2 .slider-img2:nth-child(5){
+    height: 480px; }
+
+a{
+    text-decoration: underline;
+    color: white;
+}   
+a:hover{
+    transition: 0.7s;
+    color: rgb(88, 87, 92);
+}   
